@@ -29,3 +29,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Formulario testeado
 ![Imagen_testeo](./src/assets/prueba_asincrona.PNG);
+
+## Participantes
+ Jhon JHonatan
+ #
+ Jairo Manchay
+ #
+ Kenyi Wilson Zuñiga
+#
+Brolin Eriksson Llamoca
+
