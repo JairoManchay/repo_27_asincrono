@@ -1,0 +1,33 @@
+
+<section class="container mt-3">
+  <section class="row d-flex justify-content-center">
+    <section class="col-5 shadow p-4">
+      <h3 class="text-center">Login</h3>
+      <form action="" >
+        <section class="form-floating mb-3 mt-3">
+          <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" [(ngModel)]="name" name="nombre" required #nombre="ngModel">
+          <label for="floatingInput">Email</label>
+        </section>
+        <section class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPass" placeholder="name@example.com" [(ngModel)]="pass" name="pass" required #passw="ngModel">
+          <label for="floatingPass">Password</label>
+        </section>
+        <section class="form-floating mt-3 d-flex justify-content-center">
+          <input type="submit" class="btn btn-outline-primary btn-lg" id="btnEnviar" value="Enviar" (click)="login()">
+        </section>
+      </form>
+    </section>
+  </section>
+</section>
+
+<section *ngIf="nombre.invalid && (nombre.touched || nombre.dirty)">
+  <section *ngIf="nombre.errors?.['required']" class="alert alert-warning">
+    <p>Falta rellenar el email</p>
+  </section>
+</section>
+
+<section *ngIf="passw.invalid && (passw.touched || passw.dirty)">
+  <section *ngIf="passw.errors?.['required']" class="alert alert-warning">
+    <p>Falta rellenar el email</p>
+  </section>
+</section>

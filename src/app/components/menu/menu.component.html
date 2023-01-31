@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="vista">pantalla</a>
+      <a class="btn btn-outline-success" routerLink="" *ngIf="!usuariologueado" >Login</a>
+      <a class="btn btn-outline-success" routerLink="" *ngIf="usuariologueado" (click)="logout()" >Logout</a>
+    </div>
+  </nav>
+</div>
